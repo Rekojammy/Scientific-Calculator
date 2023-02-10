@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator" id="calculator">
+
+        <div class="display" id="display">
+            <div class="typed" id="typed" value=""></div>
+            <div class="result" id="result"></div>
+            <div class="eval" id="eval" value=""></div>
+        </div>
+
+        <div class="keys">
+
+            <div class="sci-operators" id="sci-operators">
+                <button class="btn btn-operator unshow" id="cos" type="button" value="cos(">cos</button>
+                <button class="btn btn-operator unshow" id="sin" type="button" value="sin(">sin</button>
+                <button class="btn btn-operator unshow" id="tan" type="button" value="tan(">tan</button>
+                <button class="btn btn-operator unshow" id="log" type="button" value="log(">log</button>
+                <button class="btn btn-operator unshow" id="ln" type="button" value="ln(">ln</button>
+
+                <button class="btn btn-operator sups" id="inverse" type="button" value="**-1">x<sup>-1</sup></button>
+                <button class="btn btn-operator unshow" id="sqrt" type="button" value="√("><span style="font-weight: 1200;">&radic;</span></button>
+                <button class="btn btn-operator unshow" id="cubrt" type="button" value="∛("><span style="font-weight: 1200;">&#8731;</span></button>
+                <button class="btn btn-operator sups" id="index-2" type="button" value="**2">x<small><sup>2</sup></small></button>
+                <button class="btn btn-operator sups" id="index-3" type="button" value="**3">x<small><sup>3</sup></small></button>
+
+                <button class="btn btn-operator" id="main-index" type="button" value="**">^</button>        
+                <button class="btn btn-operator" id="fminus" type="button" value="-">( - )</button>
+                <button class="btn btn-operator" id="standard" type="button" value="*10">x10</button>
+                <button class="btn btn-operator" id="bopen" type="button" value="(">(</button>
+                <button class="btn btn-operator" id="bclose" type="button" value=")">)</button>
+
+            </div>
+
+            <div class="num-buttons" id="num-buttons">
+                <button class="btn" id="one" type="button" value="1">1</button>
+                <button class="btn" id="two" type="button" value="2">2</button>
+                <button class="btn" id="three" type="button" value="3">3</button>
+                <button class="btn unshow" id="delete" type="button" value="" style="background-color: rgb(141, 10, 10);">Del</button>
+                <button class="btn unshow" id="clear" type="button" value="" style="background-color: rgb(141, 10, 10);">AC</button>
+                <button class="btn" id="four" type="button" value="4">4</button>
+                <button class="btn" id="five" type="button" value="5">5</button>
+                <button class="btn" id="six" type="button" value="6">6</button>
+                <button class="btn btn-operator" id="multiply" type="button" value="*">x</button>
+                <button class="btn btn-operator" id="divide" type="button" value="/">/</button>
+                <button class="btn" id="seven" type="button" value="7">7</button>
+                <button class="btn" id="eight" type="button" value="8">8</button>
+                <button class="btn" id="nine" type="button" value="9">9</button>
+                <button class="btn btn-operator" id="plus" type="button" value="+">+</button>
+                <button class="btn btn-operator" id="minus" type="button" value="-">-</button>
+                <button class="btn" id="zero" type="button" value="0">0</button>
+                <button class="btn" id="point" type="button" value=".">.</button>
+                <button class="btn unshow" id="exponent" type="button" value="e">EXP</button>
+                <button class="btn" id="answer" type="button" value="">Ans</button>
+                <button class="btn unshow" id="equal" type="button" value="=">=</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
